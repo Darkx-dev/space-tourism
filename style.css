@@ -44,7 +44,7 @@ ul#routes a:after {
     position: absolute;
     height: 100%;
     width: 100%;
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
 }
 
 ul#routes a:hover::after {
@@ -52,9 +52,13 @@ ul#routes a:hover::after {
 }
 
 ul#routes {
-    background-color: rgba(255, 255, 255, 0.050);
     font-family: "Barlow Condensed", sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+nav ul#routes {
+    background-color: rgba(255, 255, 255, 0.050);
+    height: 12vh;
 }
 
 main {
@@ -82,6 +86,9 @@ section#d-section h1 span:first-child {
     font-family: "Barlow Condensed", sans-serif;
 }
 
+section#d-section ul#routes a {
+    padding-bottom: 20px;
+}
 /* page 3 */
 
 main#crew {
@@ -93,4 +100,10 @@ main#crew {
 main#technology {
     background: url(./assets/technology/background-technology-desktop.jpg) no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    section#home {
+        margin: 1px;
+    }
 }

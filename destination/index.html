@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../tailwind-style.css">
 </head>
@@ -21,7 +21,7 @@
                 <div class="logo mx-12">
                     <img src="../assets/shared/logo.svg" alt="">
                 </div>
-                <ul class="flex text-white gap-10 items-center h-24 w-[56vw] px-28 backdrop-blur-xl" id="routes">
+                <ul class="flex text-white gap-10 items-center w-[56vw] px-28 backdrop-blur-xl" id="routes">
                     <a href="/" class="after:opacity-0">
                         <li>
                             <span>00</span>
@@ -49,8 +49,39 @@
                 </ul>
             </nav>
         </header>
-        <section id="d-section">
-            <h1 class="text-[#979797] tracking-[4px] text-[28px] font-bold">01 <span class="text-white font-normal px-3">PICK YOUR DESTINATION</span></h1>
+        <section class="flex flex-col gap-10" id="d-section">
+            <h1 class="text-[#979797] tracking-[4px] text-[28px] font-bold">01 <span
+                    class="text-white font-normal px-3">PICK YOUR DESTINATION</span></h1>
+            <div class="flex text-white bg-transparent justify-between gap-20">
+                <div>
+                    <img src="../assets/destination/image-moon.png" alt="">
+                </div>
+                <div class="w-1/2 leading-snug">
+                    <ul id="routes" class="flex gap-8 text-base">
+                        <a href="#" class="after:opacity-0">MOON</a>
+                        <a href="#" class="after:opacity-0">MARS</a>
+                        <a href="#" class="after:opacity-0">EUROPA</a>
+                        <a href="#" class="after:opacity-0">TITAN</a>
+                    </ul>
+                    <div class="uppercase text-[100px] bellefair-regular">moon</div>
+                    <p class="text-lg tracking-wide w-[80%] font-light text-[18px] pb-10">
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                        perspective and come back refreshed. While you’re there, take in some history by visiting the
+                        Luna 2 and Apollo 11 landing sites.
+                    </p>
+                    <hr style="opacity: 0.3;">
+                    <div class="measurements flex gap-20 pt-5">
+                        <div class="flex flex-col bellefair-regular tracking-[3px] gap-2" id="avg-distance">
+                            <span class="text-sm font-light">AVG. DISTANCE</span>
+                            <span class="text-[28px]">384,400 KM</span>
+                        </div>
+                        <div class="flex flex-col bellefair-regular tracking-[3px] gap-2" id="travel-time">
+                            <span class="text-sm font-light">EST. TRAVEL TIME</span>
+                            <span class="text-[28px]">3 DAYS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
