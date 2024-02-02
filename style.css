@@ -41,7 +41,6 @@ ul#routes a {
 ul#routes a:after {
     transition: all 0.2s;
     content: "";
-    opacity: 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -61,11 +60,15 @@ ul#routes {
 main {
     height: 100%;
     width: 100%;
-}
+} 
 
 main#home {
     background: url(./assets/home/background-home-desktop.jpg) no-repeat;
     background-size: cover;
+}
+
+section {
+    margin: 4rem 12rem;
 }
 
 /* page 2 */
@@ -73,6 +76,10 @@ main#home {
 main#destination {
     background: url(./assets/destination/background-destination-desktop.jpg);
     background-size: cover;
+}
+
+section#d-section h1 span:first-child {
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 /* page 3 */
