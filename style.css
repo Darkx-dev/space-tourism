@@ -64,7 +64,7 @@ nav ul#routes {
 main {
     height: 100%;
     width: 100%;
-} 
+}
 
 main#home {
     background: url(./assets/home/background-home-desktop.jpg) no-repeat;
@@ -80,6 +80,8 @@ section {
 main#destination {
     background: url(./assets/destination/background-destination-desktop.jpg);
     background-size: cover;
+    min-width: 400px;
+    min-height: 400px
 }
 
 section#d-section h1 span:first-child {
@@ -89,6 +91,7 @@ section#d-section h1 span:first-child {
 section#d-section ul#routes a {
     padding-bottom: 20px;
 }
+
 /* page 3 */
 
 main#crew {
@@ -102,8 +105,15 @@ main#technology {
     background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
-    section#home {
-        margin: 1px;
+@media screen and (max-width: 1268px) {
+    section {
+        margin: 5px;
     }
+
+    section#d-section img {
+        min-height: fit-content;
+
+    }
+
+    ;
 }

@@ -16,7 +16,7 @@
 
 <body>
     <main id="destination">
-        <header class="pt-10">
+        <header class="pt-10 max-sm:hidden">
             <nav class="flex justify-between items-center text-base">
                 <div class="logo mx-12">
                     <img src="../assets/shared/logo.svg" alt="">
@@ -52,19 +52,19 @@
         <section class="flex flex-col gap-10" id="d-section">
             <h1 class="text-[#979797] tracking-[4px] text-[28px] font-bold">01 <span
                     class="text-white font-normal px-3">PICK YOUR DESTINATION</span></h1>
-            <div class="flex text-white bg-transparent justify-between gap-20">
+            <div class="flex max-lg:flex-col text-white bg-transparent justify-between max-lg:items-center max-sm:bg-black gap-20">
                 <div>
-                    <img src="../assets/destination/image-moon.png" alt="">
+                    <img class="h-96" src="../assets/destination/image-moon.png" alt="">
                 </div>
-                <div class="w-1/2 leading-snug">
+                <div class="w-1/2 leading-snug max-lg:w-full flex flex-col max-lg:items-center max-lg:text-center">
                     <ul id="routes" class="flex gap-8 text-base">
                         <a href="#" class="after:opacity-0">MOON</a>
                         <a href="#" class="after:opacity-0">MARS</a>
                         <a href="#" class="after:opacity-0">EUROPA</a>
                         <a href="#" class="after:opacity-0">TITAN</a>
                     </ul>
-                    <div class="uppercase text-[100px] bellefair-regular">moon</div>
-                    <p class="text-lg tracking-wide w-[80%] font-light text-[18px] pb-10">
+                    <div class="d-field uppercase text-[100px] bellefair-regular"">moon</div>
+                    <p class="d-field text-lg tracking-wide w-[80%] font-light text-[18px] pb-10">
                         See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
                         perspective and come back refreshed. While you’re there, take in some history by visiting the
                         Luna 2 and Apollo 11 landing sites.
@@ -73,17 +73,18 @@
                     <div class="measurements flex gap-20 pt-5">
                         <div class="flex flex-col bellefair-regular tracking-[3px] gap-2" id="avg-distance">
                             <span class="text-sm font-light">AVG. DISTANCE</span>
-                            <span class="text-[28px]">384,400 KM</span>
+                            <span class="text-[28px] d-field uppercase">384,400 KM</span>
                         </div>
                         <div class="flex flex-col bellefair-regular tracking-[3px] gap-2" id="travel-time">
                             <span class="text-sm font-light">EST. TRAVEL TIME</span>
-                            <span class="text-[28px]">3 DAYS</span>
+                            <span class="text-[28px] d-field uppercase">3 DAYS</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
