@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <title>Space | Crew</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./tailwind-style.css">
-
-    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tailwind-style.css">
 </head>
 
 <body>
-    <main id="home">
+    <main id="crew">
         <header class="pt-10">
             <nav class="flex justify-between items-center text-base">
                 <div class="logo mx-12">
-                    <img src="./assets/shared/logo.svg" alt="">
+                    <img src="../assets/shared/logo.svg" alt="">
                 </div>
                 <ul class="flex text-white gap-10 items-center h-24 w-[56vw] px-28 backdrop-blur-xl" id="routes">
                     <a href="/">
@@ -36,13 +34,13 @@
                             <span>Destination</span>
                         </li>
                     </a>
-                    <a href="">
+                    <a href="/crew">
                         <li>
                             <span>02</span>
                             <span>Crew</span>
                         </li>
                     </a>
-                    <a href="">
+                    <a href="/technology">
                         <li>
                             <span>03</span>
                             <span>Technology</span>
@@ -51,25 +49,7 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <div class="w-full h-full flex items-center py-36">
-                <div class="text-white flex flex-col items-start leading-tight w-1/2 px-36">
-                    <div class="text-[28px] uppercase">So, you want to travel to</div>
-                    <div class="uppercase text-[150px] tracking-wider bellefair-regular">Space</div>
-                    <p class="text-lg">
-                        Let’s face it; if you want to go to space, you might as well genuinely go to
-                        outer space and not hover kind of on the edge of it. Well sit back, and relax
-                        because we’ll give you a truly out of this world experience!
-                    </p>
-                </div>
-                <div class="w-1/2 flex justify-center items-end pt-24 h-full text-[32px]">
-                    <div class="flex items-center cursor-pointer justify-center p-28 rounded-full uppercase bellefair h-32 w-32 text-center bg-white"
-                        id="explore">Explore</div>
-                </div>
-            </div>
-        </section>
     </main>
-    <script src="index.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@ ul#routes li span:not(:first-child) {
     font-weight: 300;
 }
 
-ul#routes li {
+ul#routes a {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ ul#routes li {
     height: 100%;
 }
 
-ul#routes li:after {
+ul#routes a:after {
     transition: all 0.2s;
     content: "";
     opacity: 0;
@@ -48,9 +48,10 @@ ul#routes li:after {
     border-bottom: 5px solid white;
 }
 
-ul#routes li:hover::after {
+ul#routes a:hover::after {
     opacity: 1;
 }
+
 ul#routes {
     background-color: rgba(255, 255, 255, 0.050);
     font-family: "Barlow Condensed", sans-serif;
@@ -60,7 +61,29 @@ ul#routes {
 main {
     height: 100%;
     width: 100%;
+}
+
+main#home {
     background: url(./assets/home/background-home-desktop.jpg) no-repeat;
     background-size: cover;
 }
 
+/* page 2 */
+
+main#destination {
+    background: url(./assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+}
+
+/* page 3 */
+
+main#crew {
+    background: url(./assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+}
+
+/* page 4 */
+main#technology {
+    background: url(./assets/technology/background-technology-desktop.jpg) no-repeat;
+    background-size: cover;
+}
