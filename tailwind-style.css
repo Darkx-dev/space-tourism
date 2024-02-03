@@ -549,6 +549,10 @@ video {
   margin-right: 3rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -569,6 +573,15 @@ video {
   height: 24rem;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
@@ -587,6 +600,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-1 {
+  min-width: 0.25rem;
 }
 
 .cursor-pointer {
@@ -633,12 +650,36 @@ video {
   gap: 5rem;
 }
 
+.gap-48 {
+  gap: 12rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-28 {
+  gap: 7rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-60 {
+  gap: 15rem;
+}
+
+.gap-40 {
+  gap: 10rem;
 }
 
 .rounded-full {
@@ -652,6 +693,26 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-28 {
@@ -670,6 +731,14 @@ video {
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .pr-32 {
@@ -696,6 +765,10 @@ video {
   text-align: start;
 }
 
+.align-baseline {
+  vertical-align: baseline;
+}
+
 .text-\[100px\] {
   font-size: 100px;
 }
@@ -714,6 +787,10 @@ video {
 
 .text-\[32px\] {
   font-size: 32px;
+}
+
+.text-\[56px\] {
+  font-size: 56px;
 }
 
 .text-base {
@@ -741,6 +818,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -781,6 +862,38 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-opacity-100 {
+  --tw-text-opacity: 1;
+}
+
+.text-opacity-50 {
+  --tw-text-opacity: 0.5;
+}
+
+.text-opacity-10 {
+  --tw-text-opacity: 0.1;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
 .backdrop-blur-xl {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -801,7 +914,6 @@ body {
 
 .bellefair-regular {
   font-family: "Bellefair", unset;
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -884,6 +996,24 @@ main#crew {
   background-size: cover;
 }
 
+main#crew section img {
+  height: 100%;
+}
+
+main#crew section ul li {
+  background-color: #ffff;
+  opacity: 0.3;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+main#crew section ul li:hover {
+  opacity: 1;
+}
+
 /* page 4 */
 
 main#technology {
@@ -894,7 +1024,7 @@ main#technology {
 section {
   height: 100%;
   width: 100%;
-  padding: 25vh 8rem 0 8rem ;
+  padding: 25vh 8rem 0 8rem;
 }
 
 @media screen and (max-width: 1268px) {
@@ -912,6 +1042,16 @@ section {
     background: url(/assets/home/background-home-mobile.jpg) no-repeat;
     background-size: cover;
   }
+
+  main#destination {
+    min-height: 150vh;
+    background: url(./assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+  }
+
+  main#destination section img {
+    height: 15rem
+  };
 }
 
 .after\:opacity-0::after {
@@ -936,12 +1076,37 @@ section {
     justify-content: center;
   }
 
+  .max-lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .max-lg\:pt-0 {
     padding-top: 0px;
   }
 
+  .max-lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .max-lg\:text-center {
     text-align: center;
+  }
+
+  .max-lg\:text-\[15px\] {
+    font-size: 15px;
+  }
+
+  .max-lg\:text-\[56px\] {
+    font-size: 56px;
+  }
+
+  .max-lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .max-lg\:leading-none {
+    line-height: 1;
   }
 }
 

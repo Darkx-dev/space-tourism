@@ -1,0 +1,13 @@
+section img {
+    animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg
+    }
+}

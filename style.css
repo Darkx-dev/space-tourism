@@ -16,7 +16,6 @@ body {
 
 .bellefair-regular {
     font-family: "Bellefair", unset;
-    font-weight: 300;
     font-style: normal;
 }
 
@@ -99,6 +98,24 @@ main#crew {
     background-size: cover;
 }
 
+main#crew section img {
+    height: 100%;
+}
+
+main#crew section ul li {
+    background-color: #ffff;
+    opacity: 0.3;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+main#crew section ul li:hover {
+    opacity: 1;
+}
+
 /* page 4 */
 main#technology {
     background: url(./assets/technology/background-technology-desktop.jpg) no-repeat;
@@ -108,7 +125,8 @@ main#technology {
 section {
     height: 100%;
     width: 100%;
-    padding: 25vh 8rem 0 8rem ;
+    padding: 25vh 8rem 0 8rem;
+
 
 }
 
@@ -120,9 +138,22 @@ section {
     section#d-section img {
         min-height: fit-content;
     }
+
     main#home {
         min-height: 100vh;
         background: url(/assets/home/background-home-mobile.jpg) no-repeat;
         background-size: cover;
     }
+
+    main#destination {
+        min-height: 150vh;
+        background: url(./assets/destination/background-destination-mobile.jpg);
+        background-size: cover;
+    }
+
+    main#destination section img {
+        height: 15rem
+    };
+
+
 }
