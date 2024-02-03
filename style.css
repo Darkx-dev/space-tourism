@@ -83,8 +83,9 @@ main#destination {
     background-size: cover;
 }
 
-section#d-section h1 span:first-child {
-    font-family: "Barlow Condensed", sans-serif;
+#c-section > div > div.w-1\/2.pb-20.max-lg\:pb-0.leading-snug.max-lg\:w-full.flex.flex-col.justify-between.max-lg\:items-center.max-lg\:text-center.max-lg\:text-base.max-lg\:leading-none > h1{
+    letter-spacing: 3px;
+    font-family: "Barlow Condensed", serif;
 }
 
 section#d-section ul#routes a {
@@ -122,12 +123,36 @@ main#technology {
     background-size: cover;
 }
 
+section#t-section {
+    padding-right: 0;
+}
+
 section {
     height: 100%;
     width: 100%;
     padding: 25vh 8rem 0 8rem;
+}
 
+main {
+    animation: reveal 1s;
+}
 
+p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    word-spacing: 3px;
+    width: 85%;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 @media screen and (max-width: 1268px) {
