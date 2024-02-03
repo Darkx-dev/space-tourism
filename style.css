@@ -61,18 +61,20 @@ nav ul#routes {
     height: 12vh;
 }
 
-main {
-    height: 100%;
+header {
+    position: fixed;
     width: 100%;
 }
+
+main {
+    height: 100%;
+}
+
+/* page 1 */
 
 main#home {
     background: url(./assets/home/background-home-desktop.jpg) no-repeat;
     background-size: cover;
-}
-
-section {
-    margin: 4rem 12rem;
 }
 
 /* page 2 */
@@ -80,8 +82,6 @@ section {
 main#destination {
     background: url(./assets/destination/background-destination-desktop.jpg);
     background-size: cover;
-    min-width: 400px;
-    min-height: 400px
 }
 
 section#d-section h1 span:first-child {
@@ -105,15 +105,24 @@ main#technology {
     background-size: cover;
 }
 
+section {
+    height: 100%;
+    width: 100%;
+    padding: 25vh 8rem 0 8rem ;
+
+}
+
 @media screen and (max-width: 1268px) {
     section {
-        margin: 5px;
+        padding: 18vh 1rem 0 1rem;
     }
 
     section#d-section img {
         min-height: fit-content;
-
     }
-
-    ;
+    main#home {
+        min-height: 100vh;
+        background: url(/assets/home/background-home-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
 }

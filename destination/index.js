@@ -43,44 +43,38 @@ const destinations = [
 const routes = document.querySelectorAll("section#d-section ul#routes a")
 const dataFields = document.querySelectorAll(".d-field")
 const img = document.querySelector("#d-section img")
+
+const setPlanet = (data, fields) => {
+    let planet = {
+        name: fields[0],
+        description: fields[1],
+        distance: fields[2],
+        travel: fields[3],
+    }
+    planet.name.textContent = data.name
+    planet.distance.textContent = data.distance
+    planet.travel.textContent = data.travel
+    planet.description.textContent = data.description
+    img.src = `/${data.images.webp}`
+}
+
 routes.forEach(route => {
     route.addEventListener("click", (e) => {
         let val = e.target.textContent.toLowerCase()
-        let name = dataFields[0]
-        let desc = dataFields[1]
-        let distance = dataFields[2]
-        let time = dataFields[3]
-        console.log(img)
-        console.log(img.src.length)
-        // let 
-        if (val == "moon") {
-            name.textContent = destinations[0].name
-            desc.textContent = destinations[0].description
-            distance.textContent = destinations[0].distance
-            time.textContent = destinations[0].travel
-            img.src = "../assets/destination/image-moon.png"
+        switch (val) {
+            case "moon":
+                setPlanet(destinations[0], dataFields)
+                break
+            case "mars":
+                setPlanet(destinations[1], dataFields)
+                break
+            case "europa":
+                setPlanet(destinations[2], dataFields)
+                break
+            case "titan":
+                setPlanet(destinations[3], dataFields)
+                break
+            default: console.log("Encountered Something Wron! RERUN")
         }
-        if (val == "mars") {
-            name.textContent = destinations[1].name
-            desc.textContent = destinations[1].description
-            distance.textContent = destinations[1].distance
-            time.textContent = destinations[1].travel
-            img.src = "../assets/destination/image-mars.png"
-        }
-        if (val == "europa") {
-            name.textContent = destinations[2].name
-            desc.textContent = destinations[2].description
-            distance.textContent = destinations[2].distance
-            time.textContent = destinations[2].travel
-            img.src = "../assets/destination/image-europa.png"
-        }
-        if (val == "titan") {
-            name.textContent = destinations[3].name
-            desc.textContent = destinations[3].description
-            distance.textContent = destinations[3].distance
-            time.textContent = destinations[3].travel
-            img.src = "../assets/destination/image-titan.png"
-        }
-        
     })
 })
