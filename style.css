@@ -7,10 +7,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-html,
 body {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -57,7 +55,6 @@ ul#routes {
 
 nav ul#routes {
     background-color: rgba(255, 255, 255, 0.050);
-    height: 12vh;
 }
 
 header {
@@ -83,7 +80,7 @@ main#destination {
     background-size: cover;
 }
 
-#c-section > div > div.w-1\/2.pb-20.max-lg\:pb-0.leading-snug.max-lg\:w-full.flex.flex-col.justify-between.max-lg\:items-center.max-lg\:text-center.max-lg\:text-base.max-lg\:leading-none > h1{
+#c-section>div>div.w-1\/2.pb-20.max-lg\:pb-0.leading-snug.max-lg\:w-full.flex.flex-col.justify-between.max-lg\:items-center.max-lg\:text-center.max-lg\:text-base.max-lg\:leading-none>h1 {
     letter-spacing: 3px;
     font-family: "Barlow Condensed", serif;
 }
@@ -131,6 +128,7 @@ section {
     height: 100%;
     width: 100%;
     padding: 25vh 8rem 0 8rem;
+    z-index: 1;
 }
 
 main {
@@ -146,39 +144,71 @@ p {
     line-height: 1.5rem;
 }
 
+/* nav  */
+
+input[type="checkbox"]:checked+ul {
+    right: 0;
+}
+
+
+/*  */
+
 @keyframes reveal {
     0% {
         opacity: 0.9;
     }
+
     100% {
         opacity: 1
     }
 }
 
-@media screen and (max-width: 1268px) {
+
+@media screen and (max-width: 1280px) {
+    header {
+        z-index: 99999;
+    }
+
     section {
         padding: 18vh 1rem 0 1rem;
+    }
+
+    a {
+        gap: 0px !important;
+    }
+
+    nav ul a:after {
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        right: -100vh;
+        top: 0;
+        z-index: 5;
+        height: 100vh;
     }
 
     section#d-section img {
         min-height: fit-content;
     }
 
-    main#home {
+    body#h-body {
         min-height: 100vh;
         background: url(/assets/home/background-home-mobile.jpg) no-repeat;
         background-size: cover;
     }
 
     main#destination {
-        min-height: 150vh;
+        min-height: 100vh;
         background: url(./assets/destination/background-destination-mobile.jpg);
         background-size: cover;
     }
 
     main#destination section img {
         height: 15rem
-    };
+    }
 
+    ;
 
 }

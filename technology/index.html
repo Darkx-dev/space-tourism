@@ -15,33 +15,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="t-body">
     <main id="technology" class="">
-        <header class="pt-10 bg-blac">
-            <nav class="flex justify-between items-center text-base">
-                <div class="logo mx-12">
-                    <img src="../assets/shared/logo.svg" alt="">
+        <header class="pt-10 max-lg:pt-5">
+            <nav class="flex justify-between text-base">
+                <div class="logo mx-12 my-0">
+                    <img src="/assets/shared/logo.svg" alt="">
                 </div>
-                <ul class="flex text-white gap-10 items-center h-24 w-[56vw] px-28 backdrop-blur-xl" id="routes">
+                <label class="z-40 text-white px-5 lg:hidden cursor-pointer grid place-items-center" for="sidebar">
+                    <img src="/assets/shared/icon-hamburger.svg" alt="">
+                    <img class="hidden" src="/assets/shared/icon-close.svg" alt="">
+                </label>
+                <input class="hidden" type="checkbox" name="" id="sidebar">
+                <ul class="flex text-white gap-10 max-lg:w-[70%] items-center h-24 max-lg:flex-col max-lg:items-start max-lg:px-10 max-lg:py-20 max-lg:gap-0 max-lg:h-screen w-[56vw] px-28 backdrop-blur-xl"
+                    id="routes">
                     <a href="/" class="after:opacity-0">
                         <li>
                             <span>00</span>
                             <span>Home</span>
                         </li>
                     </a>
-                    <a href="/destination" class="after:opacity-0">
+                    <a href="/destination/" class="after:opacity-0">
                         <li>
                             <span>01</span>
                             <span>Destination</span>
                         </li>
                     </a>
-                    <a href="/crew" class="after:opacity-0">
+                    <a href="/crew/" class="after:opacity-0">
                         <li>
                             <span>02</span>
                             <span>Crew</span>
                         </li>
                     </a>
-                    <a href="/technology">
+                    <a href="/technology/">
                         <li>
                             <span>03</span>
                             <span>Technology</span>
@@ -50,43 +56,45 @@
                 </ul>
             </nav>
         </header>
-        <section class="flex flex-col h-full w-full gap-10" id="t-section">
+        <section class="flex flex-col h-full w-full max-lg:px-2 gap-10" id="t-section">
             <div
                 class="flex max-lg:flex-col h-full w-full text-white bg-transparent justify-between max-lg:items-center max-lg:gap-10">
                 <div
-                    class="w-full   pb-20 max-lg:pb-0 leading-snug max-lg:w-full gap-5 max-lg:items-center max-lg:text-center max-lg:text-base max-lg:leading-none">
-                    <h1
-                        class="text-[#979797] flex h-fit w-1/2racking-[4px] text-[28px] max-lg:text-base max-lg:text-center">
-                        03 <span class="text-white w-full pl-3">SPACE LAUNCH 101</span>
+                    class="w-full pb-20 max-lg:pb-0 leading-snug max-lg:w-full gap-5 max-lg:items-center max-lg:text-center max-lg:text-base max-lg:leading-none">
+                    <h1 class="text-[#979797] flex h-fit w-1/2 text-[28px] max-lg:text-base ">
+                        03 <span class="text-white pl-3">SPACE LAUNCH 101</span>
                     </h1>
-                    <div class="grid grid-cols-2 h-full w-full justify-between items-center">
-                        <div class="flex gap-24 items-center justify-between ">
+                    <div
+                        class="grid grid-cols-2 max-lg:flex max-lg:flex-col-reverse h-full w-full justify-between items-center">
+                        <div class="flex max-lg:flex-col max-lg:gap-5 gap-24 items-center justify-between ">
                             <div class="flex">
-                                <ul class="flex flex-col gap-10">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
+                                <ul class="flex flex-col max-lg:flex-row gap-10 max-lg:gap-5">
+                                    <li id="0">1</li>
+                                    <li id="1">2</li>
+                                    <li id="2">3</li>
                                 </ul>
                             </div>
-                            <div class="w-full">
-                                <h4 class="text-sm data-field">THE TERMINOLOGY...</h4>
-                                <h1 class="text-[56px] bellefair-regular data-field">LAUNCH VEHICLE</h1>
-                                <p class="py-5 data-field">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                            <div class="w-full flex flex-col max-lg:items-center">
+                                <h4 class="text-sm">THE TERMINOLOGY...</h4>
+                                <h1 class="text-[56px] max-lg:text-2xl bellefair-regular data-field tracking-wider">
+                                    LAUNCH VEHICLE</h1>
+                                <p class="py-5 data-field">A launch vehicle or carrier rocket is a rocket-propelled
+                                    vehicle used to carry a
                                     payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X
                                     carrier rocket is the most powerful in operation. Standing 150 metres tall, it's
                                     quite an awe-inspiring sight on the launch pad!</p>
                             </div>
                         </div>
-                        <div class=" max-lg:w-full flex justify-end">
-                            <img src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+                        <div class="max-lg:w-full flex justify-end max-lg:justify-center">
+                            <img src="../assets/technology/image-launch-vehicle-portrait.jpg" class="max-lg:h-full"
+                                alt="">
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>

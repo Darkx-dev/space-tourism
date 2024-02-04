@@ -15,33 +15,39 @@
     <link rel="stylesheet" href="../tailwind-style.css">
 </head>
 
-<body>
+<body id="d-body">
     <main id="destination">
-        <header class="pt-10">
-            <nav class="flex justify-between items-center text-base">
-                <div class="logo mx-12">
-                    <img src="../assets/shared/logo.svg" alt="">
+        <header class="pt-10 max-lg:pt-5">
+            <nav class="flex justify-between text-base">
+                <div class="logo mx-12 my-0">
+                    <img src="./assets/shared/logo.svg" alt="">
                 </div>
-                <ul class="flex text-white gap-10 items-center w-[56vw] px-28 backdrop-blur-xl max-sm:hidden max-sm:mb-5" id="routes">
+                <label class="z-40 text-white px-5 lg:hidden cursor-pointer grid place-items-center" for="sidebar">
+                    <img src="/assets/shared/icon-hamburger.svg" alt="">
+                    <img class="hidden" src="/assets/shared/icon-close.svg" alt="">
+                </label>
+                <input class="hidden" type="checkbox" name="" id="sidebar">
+                <ul class="flex text-white gap-10 max-lg:w-[70%] items-center h-24 max-lg:flex-col max-lg:items-start max-lg:px-10 max-lg:py-20 max-lg:gap-0 max-lg:h-screen w-[56vw] px-28 backdrop-blur-xl"
+                    id="routes">
                     <a href="/" class="after:opacity-0">
                         <li>
                             <span>00</span>
                             <span>Home</span>
                         </li>
                     </a>
-                    <a href="/destination">
+                    <a href="/destination/">
                         <li>
                             <span>01</span>
                             <span>Destination</span>
                         </li>
                     </a>
-                    <a href="/crew" class="after:opacity-0">
+                    <a href="/crew/" class="after:opacity-0">
                         <li>
                             <span>02</span>
                             <span>Crew</span>
                         </li>
                     </a>
-                    <a href="/technology" class="after:opacity-0">
+                    <a href="/technology/" class="after:opacity-0">
                         <li>
                             <span>03</span>
                             <span>Technology</span>
@@ -50,14 +56,15 @@
                 </ul>
             </nav>
         </header>
-        <section class="flex flex-col gap-10" id="d-section">
+        <section class="flex flex-col gap-10  max-lg:pt-20" id="d-section">
             <h1 class="text-[#979797] tracking-[4px] text-[28px] max-lg:text-base max-lg:text-center font-bold">01 <span
                     class="text-white font-normal px-3">PICK YOUR DESTINATION</span></h1>
             <div class="flex max-lg:flex-col text-white bg-transparent justify-between max-lg:items-center gap-20">
                 <div>
                     <img class="h-96" src="../assets/destination/image-moon.png" alt="">
                 </div>
-                <div class="w-1/2 leading-snug max-lg:w-full flex flex-col max-lg:items-center max-lg:text-center max-lg:text-base max-lg:leading-none">
+                <div
+                    class="w-1/2 leading-snug max-lg:w-full flex flex-col max-lg:items-center max-lg:text-center max-lg:text-base max-lg:leading-none">
                     <ul id="routes" class="flex gap-8 text-base">
                         <a href="#" class="after:opacity-0">MOON</a>
                         <a href="#" class="after:opacity-0">MARS</a>
@@ -65,7 +72,8 @@
                         <a href="#" class="after:opacity-0">TITAN</a>
                     </ul>
                     <div class="d-field uppercase text-[100px] bellefair-regular max-lg:text-[56px]">moon</div>
-                    <p class="d-field text-lg tracking-wide text-start font-light text-[18px] pt-5 pb-10 max-lg:text-[15px] max-lg:text-center">
+                    <p
+                        class="d-field text-lg tracking-wide text-start font-light text-[18px] pt-5 pb-10 max-lg:text-[15px] max-lg:text-center">
                         See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
                         perspective and come back refreshed. While you’re there, take in some history by visiting the
                         Luna 2 and Apollo 11 landing sites.

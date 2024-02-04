@@ -14,33 +14,39 @@
     <link rel="stylesheet" href="../tailwind-style.css">
 </head>
 
-<body>
+<body id="c-body">
     <main id="crew">
-        <header class="pt-10">
-            <nav class="flex justify-between items-center text-base">
-                <div class="logo mx-12">
-                    <img src="../assets/shared/logo.svg" alt="">
+        <header class="pt-10 max-lg:pt-5">
+            <nav class="flex justify-between text-base">
+                <div class="logo mx-12 my-0">
+                    <img src="./assets/shared/logo.svg" alt="">
                 </div>
-                <ul class="flex text-white gap-10 items-center h-24 w-[56vw] px-28 backdrop-blur-xl" id="routes">
+                <label class="z-40 text-white px-5 lg:hidden cursor-pointer grid place-items-center" for="sidebar">
+                    <img src="/assets/shared/icon-hamburger.svg" alt="">
+                    <img class="hidden" src="/assets/shared/icon-close.svg" alt="">
+                </label>
+                <input class="hidden" type="checkbox" name="" id="sidebar">
+                <ul class="flex text-white gap-10 max-lg:w-[70%] items-center h-24 max-lg:flex-col max-lg:items-start max-lg:px-10 max-lg:py-20 max-lg:gap-0 max-lg:h-screen w-[56vw] px-28 backdrop-blur-xl"
+                    id="routes">
                     <a href="/" class="after:opacity-0">
                         <li>
                             <span>00</span>
                             <span>Home</span>
                         </li>
                     </a>
-                    <a href="/destination" class="after:opacity-0">
+                    <a href="/destination/" class="after:opacity-0">
                         <li>
                             <span>01</span>
                             <span>Destination</span>
                         </li>
                     </a>
-                    <a href="/crew">
+                    <a href="/crew/">
                         <li>
                             <span>02</span>
                             <span>Crew</span>
                         </li>
                     </a>
-                    <a href="/technology" class="after:opacity-0">
+                    <a href="/technology/" class="after:opacity-0">
                         <li>
                             <span>03</span>
                             <span>Technology</span>
@@ -61,7 +67,8 @@
                     <div>
                         <h2 class="text-[32px] bellefair-regular tracking-wide opacity-50 data-field">COMMANDER</h2>
                         <h1 class="text-[56px] bellefair-regular data-field text-nowrap">DOUGLAS HURLEY</h1>
-                        <p class="text-lg data-field">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and
+                        <p class="text-lg data-field">Douglas Gerald Hurley is an American engineer, former Marine Corps
+                            pilot and
                             former NASA
                             astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
                     </div>
