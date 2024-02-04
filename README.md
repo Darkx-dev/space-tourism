@@ -38,7 +38,7 @@ If you'd like to contribute to the project, feel free to submit issues or pull r
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
 ## Credits
 
