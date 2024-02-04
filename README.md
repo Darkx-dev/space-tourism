@@ -36,6 +36,10 @@ This repository contains the frontend code for a space tourism website. The desi
 
 If you'd like to contribute to the project, feel free to submit issues or pull requests.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
 ## Credits
 
 - Frontend design and assets: [FrontendMentor](https://www.frontendmentor.io/)
