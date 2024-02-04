@@ -15,11 +15,11 @@
 </head>
 
 <body id="c-body">
-    <main id="crew">
+    <main id="crew" class="max-h-screen overflow-hidden max-lg:overflow-auto">
         <header class="pt-10 max-lg:pt-5">
             <nav class="flex justify-between text-base">
                 <div class="logo mx-12 my-0">
-                    <img src="./assets/shared/logo.svg" alt="">
+                    <img src="/assets/shared/logo.svg" alt="">
                 </div>
                 <label class="z-40 text-white px-5 lg:hidden cursor-pointer grid place-items-center" for="sidebar">
                     <img src="/assets/shared/icon-hamburger.svg" alt="">
@@ -55,33 +55,45 @@
                 </ul>
             </nav>
         </header>
-        <section class="flex flex-col h-full w-full gap-10" id="c-section">
-            <div
-                class="flex max-lg:flex-col h-full w-full text-white bg-transparent gap-40 justify-between max-lg:items-center max-lg:gap-10">
-                <div
-                    class="w-1/2 pb-20 max-lg:pb-0 leading-snug max-lg:w-full flex flex-col justify-between max-lg:items-center max-lg:text-center max-lg:text-base max-lg:leading-none">
-                    <h1
-                        class="text-[#979797] flex h-fit w-1/2racking-[4px] text-[28px] max-lg:text-base max-lg:text-center font-semibold">
-                        02 <span class="text-white w-full font-normal pl-3">MEET YOUR CREW</span>
-                    </h1>
-                    <div>
-                        <h2 class="text-[32px] bellefair-regular tracking-wide opacity-50 data-field">COMMANDER</h2>
-                        <h1 class="text-[56px] bellefair-regular data-field text-nowrap">DOUGLAS HURLEY</h1>
-                        <p class="text-lg data-field">Douglas Gerald Hurley is an American engineer, former Marine Corps
-                            pilot and
-                            former NASA
-                            astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+        <section class="flex flex-col w-full max-lg:pt-20" id="c-section">
+            <div class="flex flex-col h-full w-full text-white bg-transparent m-0 max-lg:items-center max-lg:gap-10">
+                <h1
+                    class="text-[#979797] flex h-fit w-1/2racking-[4px] tracking-widest text-[28px] max-lg:text-base max-lg:text-center font-semibold">
+                    02 <span class="text-white text-start w-full font-normal pl-3">MEET YOUR CREW</span>
+                </h1>
+                <div class="flex h-full max-lg:flex-col-reverse justify-end max-lg:items-center">
+                    <div
+                        class="w-1/2 pt-16 max-lg:pt-5 max-lg:w-full max-lg:items-center flex flex-col justify-between">
+                        <div
+                            class="w-full max-lg:flex-col-reverse max-lg:gap-5 max-lg:pb-0 leading-snug max-lg:w-full flex flex-col gap-28 justify-between max-lg:items-center max-lg:text-center max-lg:text-base max-lg:leading-none">
+                            <div class="flex flex-col m-0 p-0 h-fit gap-2 max-lg:items-center">
+                                <h2
+                                    class="text-[32px] bellefair-regular tracking-wide opacity-50 data-field max-lg:text-base">
+                                    COMMANDER</h2>
+                                <h1 class="text-[56px] bellefair-regular data-field text-nowrap max-lg:text-2xl">DOUGLAS
+                                    HURLEY</h1>
+                                <p class="text-lg data-field">Douglas Gerald Hurley is an American engineer, former
+                                    Marine
+                                    Corps
+                                    pilot and
+                                    former NASA
+                                    astronaut. He launched into space for the third time as commander of Crew Dragon
+                                    Demo-2.
+                                </p>
+                            </div>
+                            <ul class="flex gap-5">
+                                <li id="0"></li>
+                                <li id="1"></li>
+                                <li id="2"></li>
+                                <li id="3"></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="flex gap-5">
-                        <li id="0"></li>
-                        <li id="1"></li>
-                        <li id="2"></li>
-                        <li id="3"></li>
-                    </ul>
-                </div>
 
-                <div class="h-full w-1/2 max-lg:w-full max-lg: flex justify-end">
-                    <img src="../assets/crew/image-douglas-hurley.webp" class="" alt="">
+                    <div
+                        class="w-1/2 h-full max-lg:w-[90%] max-lg:h-1/2 max-lg:justify-center max-lg:border-b-2 border-b-slate-600 flex justify-end">
+                        <img src="../assets/crew/image-douglas-hurley.webp" class="" alt="">
+                    </div>
                 </div>
             </div>
         </section>

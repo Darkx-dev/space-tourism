@@ -24,12 +24,13 @@
                 </div>
                 <label class="z-40 text-white px-5 lg:hidden cursor-pointer grid place-items-center" for="sidebar">
                     <img src="/assets/shared/icon-hamburger.svg" alt="">
-                    <img class="hidden" src="/assets/shared/icon-close.svg" alt="">
+                    <input type="checkbox" hidden name="" id="">
+                    <img id="closeIcon" class="hidden" src="/assets/shared/icon-close.svg" alt="">
                 </label>
-                <input class="hidden" type="checkbox" name="" id="sidebar">
+                <input class="hidden" type="checkbox" id="sidebar">
                 <ul class="flex text-white gap-10 max-lg:w-[70%] items-center h-24 max-lg:flex-col max-lg:items-start max-lg:px-10 max-lg:py-20 max-lg:gap-0 max-lg:h-screen w-[56vw] px-28 backdrop-blur-xl"
                     id="routes">
-                    <a href="/" class="after:opacity-0">
+                    <a href="/">
                         <li>
                             <span>00</span>
                             <span>Home</span>
@@ -47,7 +48,7 @@
                             <span>Crew</span>
                         </li>
                     </a>
-                    <a href="/technology/">
+                    <a href="/technology/" class="after:opacity-0">
                         <li>
                             <span>03</span>
                             <span>Technology</span>
@@ -72,7 +73,10 @@
                 <div
                     class="w-1/2 flex justify-end max-lg:justify-center items-end pt-24 max-lg:pt-0 h-full text-[32px]">
                     <div class="flex relative max-sm:scale-75 items-center cursor-pointer justify-center p-28 rounded-full uppercase bellefair h-32 w-32 text-center bg-white"
-                        id="explore">Explore</div>
+                        id="explore">
+                        <a href="/destination/
+                        ">Explore</a>
+                    </div>
                 </div>
             </div>
         </section>
