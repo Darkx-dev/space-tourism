@@ -25,7 +25,7 @@ This repository contains the frontend code for a space tourism website. The desi
 4. Compile Tailwind CSS:
 
    ```bash
-   npx tailwindcss build ./style.css -o ./tailwind.css --watch
+   npx tailwindcss build ./style.css -o ./tailwind-style.css --watch
    ```
 
    This command watches for changes in the `style.css` file and updates the `tailwind.css` output accordingly.
