@@ -1074,6 +1074,10 @@ main {
   animation: reveal 1s;
 }
 
+.logo {
+  margin: 1.5rem 2rem;
+}
+
 p {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 200;
@@ -1106,6 +1110,10 @@ input#sidebar[type="checkbox"]:checked ~ img {
 }
 
 @media screen and (max-width: 1280px) {
+  .logo {
+    margin: 0px 15px;
+  }
+
   main {
     min-height: 100vh;
     overflow-y: scroll;
