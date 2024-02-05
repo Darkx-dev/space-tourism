@@ -13,7 +13,7 @@ This repository contains the frontend code for a space tourism website. The desi
 2. Navigate to the project directory:
 
    ```bash
-   cd space-tourism-frontend
+   cd space-tourism
    ```
 
 3. Install dependencies:
@@ -21,8 +21,12 @@ This repository contains the frontend code for a space tourism website. The desi
    ```bash
    npm install
    ```
+   or
+   ```bash
+   npm i
+   ```
 
-4. Compile Tailwind CSS:
+5. Compile Tailwind CSS:
 
    ```bash
    npx tailwindcss build ./style.css -o ./tailwind-style.css --watch
@@ -30,7 +34,7 @@ This repository contains the frontend code for a space tourism website. The desi
 
    This command watches for changes in the `style.css` file and updates the `tailwind.css` output accordingly.
 
-5. Open the `index.html` file in your browser to view the space tourism website.
+6. Open the `index.html` file in your browser to view the space tourism website.
 
 ## Contributing
 
